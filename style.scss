@@ -151,13 +151,14 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+//   margin-bottom: 50px;
 }
 
 .masthead {
   padding: 20px 0;
   border-bottom: 1px solid $red;
   background-image: url("http://tr.ichallenge.ir/wp-content/uploads/2020/11/19333449-scaled.jpg");
+  background-size: fill;
 
   @include mobile {
     text-align: center;
