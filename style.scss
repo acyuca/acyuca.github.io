@@ -159,6 +159,7 @@ img {
   border-bottom: 1px solid $red;
   background-image: url("http://tr.ichallenge.ir/wp-content/uploads/2020/11/19333449-scaled.jpg");
   background-size: contain;
+  width: 100%;
 
   @include mobile {
     text-align: center;
