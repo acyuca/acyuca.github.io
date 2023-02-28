@@ -9,7 +9,7 @@ name: ACYU
 description: Astronomy club at York university
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://pbs.twimg.com/profile_images/1328777897679654918/Y5N9h3Oz_400x400.jpg
+avatar: ./logo.jpg
 
 #
 # Flags below are optional
