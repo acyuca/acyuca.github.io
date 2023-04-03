@@ -152,14 +152,14 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
-  background-image: url("http://tr.ichallenge.ir/wp-content/uploads/2020/11/19333449-scaled.jpg"),  linear-gradient(rgba(255,0,0,0), rgba(255,0,0,1));
+  background-image:  linear-gradient(rgba(255,0,0,1), rgba(200,55,0,0)), url("http://tr.ichallenge.ir/wp-content/uploads/2020/11/19333449-scaled.jpg");
   background-size: contain;
 //   width: 100%;
 }
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $red;
+  border-bottom: 1px solid $paleYellow;
   
 
   @include mobile {
@@ -181,6 +181,7 @@ img {
 
   img {
     border-radius: 5px;
+    border-color: $paleYellow;
   }
 }
 
@@ -196,7 +197,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $red;
+  color: $white;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
