@@ -153,8 +153,8 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
-  background-image:  linear-gradient(rgba(1,2,10,1), rgba(0,55,30,0)), url("http://tr.ichallenge.ir/wp-content/uploads/2020/11/19333449-scaled.jpg");
-  background-size: contain;
+//   background-image:  linear-gradient(rgba(1,2,10,1), rgba(0,55,30,0)), url("http://tr.ichallenge.ir/wp-content/uploads/2020/11/19333449-scaled.jpg");
+//   background-size: contain;
 //   width: 100%;
 }
 
@@ -200,7 +200,7 @@ img {
   margin: 0;
   color: $white;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $nasalization; // helveticaNeue 
   font-weight: 300;
   font-size: 32px;
   letter-spacing: 1px;
@@ -293,3 +293,21 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+// Casca2020 inspired styling
+
+.navbar{
+	background-image:  linear-gradient(rgba(1,2,10,1), rgba(0,55,30,0)), url("http://tr.ichallenge.ir/wp-content/uploads/2020/11/19333449-scaled.jpg");
+  	background-size: contain;
+	@include mobile {
+		background-image:  linear-gradient(rgba(1,2,10,1), rgba(0,55,30,0));
+  		background-size: contain;
+	}
+}
+.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    /* background-color: #212529; */
+    height: 150;
+    background: linear-gradient(rgba(1,2,10,1), rgba(0,55,30,0));
+  }
