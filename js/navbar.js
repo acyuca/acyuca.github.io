@@ -29,17 +29,17 @@
   // Collapse Navbar
   var navbarCollapse = function() {
     var x = $("#mainNav").offset();
-    console.log($("#mainNav").offset().top);
+//     console.log($("#mainNav").offset().top);
     if (x.top > 100) {
       $("#mainNav").addClass("navbar-shrink");
       $("#site-info-nav").addClass("navinfo-hide");
-      console.log("shrunk");
+//       console.log("shrunk");
 
       
     } else {
       $("#mainNav").removeClass("navbar-shrink");
       $("#site-info-nav").removeClass("navinfo-hide");
-      console.log("expanded");
+//       console.log("expanded");
       
     }
   };
@@ -51,6 +51,6 @@
   $(window).scroll(navbarCollapse);
 
 
-console.log("inside");
+// console.log("inside");
 })(jQuery);// End of use strict
-console.log("Outside");
+// console.log("Outside");
