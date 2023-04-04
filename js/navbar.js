@@ -28,17 +28,17 @@
 
   // Collapse Navbar
   var navbarCollapse = function() {
-    if ($("#mainNav").offset() > 100) {
+    if ($("#mainNav").offsetTop() > 100) {
       $("#mainNav").addClass("navbar-shrink");
       $("#site-info-nav").addClass("navinfo-hide");
       console.log("shrunk");
-      console.log($("#mainNav").offset());
+      console.log($("#mainNav").offsetTop());
       
     } else {
       $("#mainNav").removeClass("navbar-shrink");
       $("#site-info-nav").removeClass("navinfo-hide");
       console.log("expanded");
-      console.log($("#mainNav").offset());
+      console.log($("#mainNav").offsetTop());
     }
   };
   // Collapse now if page is not at top
