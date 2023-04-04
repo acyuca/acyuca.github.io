@@ -28,21 +28,25 @@
 
   // Collapse Navbar
   var navbarCollapse = function() {
-    if ($("#mainNav").offsetTop() > 100) {
+    var x = $("#mainNav").offset();
+    console.log($("#mainNav").offset().top);
+    if (x.top > 100) {
       $("#mainNav").addClass("navbar-shrink");
       $("#site-info-nav").addClass("navinfo-hide");
       console.log("shrunk");
-      console.log($("#mainNav").offsetTop());
+
       
     } else {
       $("#mainNav").removeClass("navbar-shrink");
       $("#site-info-nav").removeClass("navinfo-hide");
       console.log("expanded");
-      console.log($("#mainNav").offsetTop());
+      
     }
   };
   // Collapse now if page is not at top
-  navbarCollapse();
+  $(document).ready(function(){
+      navbarCollapse();
+  });
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
