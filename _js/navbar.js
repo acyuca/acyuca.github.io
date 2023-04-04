@@ -8,7 +8,7 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 54)
+          scrollTop: (target.offset().top - 0)
         }, 1000, "easeInOutExpo");
         return false;
       }
@@ -23,7 +23,7 @@
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
-    offset: 56
+    offset: 0
   });
 
   // Collapse Navbar
@@ -31,10 +31,12 @@
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
       $("#site-info-nav").addClass("navinfo-hide");
+      console.log("shrunk");
       
     } else {
       $("#mainNav").removeClass("navbar-shrink");
       $("#site-info-nav").removeClass("navinfo-hide");
+      console.log("expanded");
     }
   };
   // Collapse now if page is not at top
@@ -43,5 +45,6 @@
   $(window).scroll(navbarCollapse);
 
 
-
-})(jQuery); // End of use strict
+console.log("inside");
+})(jQuery);// End of use strict
+console.log("Outside");
