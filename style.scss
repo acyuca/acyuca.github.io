@@ -309,10 +309,10 @@ footer {
 // Casca2020 inspired styling
 
 .navbar{
-	background-image:  linear-gradient(rgba(1,2,10,1), rgba(0,55,30,0));
+	background-image:  linear-gradient(rgba(1,2,10,1), rgba(0,5,60,0));
   	background-size: contain;
 	@include mobile {
-		background-image:  linear-gradient(rgba(1,5,10,1), rgba(0,55,30,1));
+		background-image:  linear-gradient(rgba(1,5,10,1), $deepBlue);
   		background-size: contain;
 	}
 }
@@ -321,7 +321,7 @@ footer {
     padding-bottom: 0;
     /* background-color: #212529; */
     height: 150;
-    background: linear-gradient(rgba(1,5,10,1), rgba(0,55,30,1));
+    background: linear-gradient(rgba(1,5,10,1), $deepBlue);
   }
 .navinfo-hide {
 	display: none;
