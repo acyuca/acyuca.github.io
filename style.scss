@@ -24,6 +24,18 @@ body {
   color: $white;
 }
 
+
+.no-padding {
+  padding: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.no-margin {
+  /* margin: 0px !important; */
+  margin-top: 0px !important;
+}
+
 .container {
   margin: 0 auto;
   max-width: 740px;
@@ -153,8 +165,8 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
-//   background-image:  linear-gradient(rgba(1,2,10,1), rgba(0,55,30,0)), url("http://tr.ichallenge.ir/wp-content/uploads/2020/11/19333449-scaled.jpg");
-//   background-size: contain;
+  background-image:  url("http://tr.ichallenge.ir/wp-content/uploads/2020/11/19333449-scaled.jpg");
+  background-size: contain;
 //   width: 100%;
 }
 
@@ -297,7 +309,7 @@ footer {
 // Casca2020 inspired styling
 
 .navbar{
-	background-image:  linear-gradient(rgba(1,2,10,1), rgba(0,55,30,0)), url("http://tr.ichallenge.ir/wp-content/uploads/2020/11/19333449-scaled.jpg");
+	background-image:  linear-gradient(rgba(1,2,10,1), rgba(0,55,30,0));
   	background-size: contain;
 	@include mobile {
 		background-image:  linear-gradient(rgba(1,2,10,1), rgba(0,55,30,0));
@@ -313,5 +325,8 @@ footer {
   }
 .navinfo-hide {
 	display: none;
+	visibility: hidden;
+ 	opacity: 0;
+  	transition: 0.3s ease;
 }
 
