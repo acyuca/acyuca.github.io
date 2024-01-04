@@ -52,5 +52,5 @@
 
 
 // console.log("inside");
-})//(jQuery);// End of use strict
+})(jQuery);// End of use strict
 // console.log("Outside");
