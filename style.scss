@@ -326,7 +326,7 @@ footer {
     padding-bottom: 0em;
     /* background-color: #212529; */
     height: 5em;
-    background: linear-gradient($deepBlue, rgba(10,100,90,0));
+    background: linear-gradient($deepBlue, rgba(10,100,90,0), $deepBlue);
   }
 .navinfo-hide {
 	display: none;
