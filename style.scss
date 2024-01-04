@@ -195,6 +195,7 @@ img {
   img {
     border-radius: 5px;
     border-color: $paleYellow;
+    padding: 5px;
   }
 }
 
@@ -221,7 +222,7 @@ img {
 .site-description {
   margin: -5px 0 0 0;
   color: $paleYellow;
-  font-size: 24px;
+  font-size: 14px;
 
   @include mobile {
     margin: 3px 0;
